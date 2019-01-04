@@ -1,0 +1,271 @@
+body #BH-background .BA-main .BA-center #rivers2 #rC {
+  width: 368px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 12px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding: 8px 12px 0px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info .card-icon {
+  position: relative;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info .card-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info .braver-header-userinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info .braver-header-userinfo .braver-header-name {
+  display: inline-block;
+  font-weight: 600;
+  color: #4a4a4a;
+  line-height: 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info .braver-header-userinfo .braver-header-name p {
+  display: inline-block;
+  padding: 0 2px;
+  color: #989898;
+  font-weight: 400;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-info .braver-header-userinfo .braver-header-statusinfo {
+  color: #989898;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-content .braver-card-preview {
+  padding: 4px 12px;
+  font-size: 15px;
+  color: #323232;
+  line-height: 23px;
+  max-height: 46px;
+  max-width: 364px;
+  overflow: hidden;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-content .braver-card-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #323232;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rC .braver-card .braver-card-content .braver-card-img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  min-width: 237px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB {
+  width: 368px;
+  margin: 0;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 12px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding: 8px 12px 0px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info .card-icon {
+  position: relative;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info .card-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info .braver-header-userinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info .braver-header-userinfo .braver-header-name {
+  display: inline-block;
+  font-weight: 600;
+  color: #4a4a4a;
+  line-height: 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info .braver-header-userinfo .braver-header-name p {
+  display: inline-block;
+  padding: 0 2px;
+  color: #989898;
+  font-weight: 400;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-info .braver-header-userinfo .braver-header-statusinfo {
+  color: #989898;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-content .braver-card-preview {
+  padding: 4px 12px;
+  font-size: 15px;
+  color: #323232;
+  line-height: 23px;
+  max-height: 46px;
+  max-width: 364px;
+  overflow: hidden;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-content .braver-card-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+body #BH-background .BA-main .BA-center #rivers2 #rB .braver-card .braver-card-content .braver-card-img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  min-width: 237px;
+}
+
+/*# sourceMappingURL=web-braver-on-index.css.map */

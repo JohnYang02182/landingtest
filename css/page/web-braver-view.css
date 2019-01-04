@@ -1,0 +1,402 @@
+body .braver-popup-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 0 0 0;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+  background: #EFEFF4;
+}
+
+body .braver-popup-container .post-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  height: 100%;
+  max-height: 840px;
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 3px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body .braver-popup-container .post-area .post-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  height: 100%;
+  background-color: #323232;
+  border-radius: 3px;
+}
+
+body .braver-popup-container .post-area .post-img img {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+body .braver-popup-container .post-area .post-main-content {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 16px 16px 48px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  border-radius: 3px;
+}
+
+body .braver-popup-container .post-area .post-main-content .header-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+body .braver-popup-container .post-area .post-main-content .header-area .head-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #323232;
+}
+
+body .braver-popup-container .post-area .post-main-content .header-area .head-post-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 12px;
+}
+
+body .braver-popup-container .post-area .post-main-content .header-area .head-post-info .head-name {
+  font-size: 15px;
+  line-height: 23px;
+  color: #323232;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-weight: bold;
+}
+
+body .braver-popup-container .post-area .post-main-content .header-area .head-post-info .head-time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #989898;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body {
+  display: block;
+  padding: 0 0 8px 0;
+  font-size: 15px;
+  line-height: 23px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .function-feild {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 0;
+  border-bottom: 1px solid #EFEFF4;
+  width: 100%;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .function-feild .btn-func {
+  margin: 0 6px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .function-feild .btn-func:nth-of-type(1) {
+  margin: 0 6px 0 8px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .function-feild .btn-func img {
+  width: 100%;
+  height: auto;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .function-feild p {
+  margin-left: calc(100% - 165px);
+  font-size: 13px;
+  color: #989898;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .article-info {
+  display: block;
+  margin: 4px 0 4px 8px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 21px;
+  color: #989898;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild {
+  position: relative;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 4px 0 4px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-head .head-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-head .head-icon img {
+  height: inherit;
+  width: auto;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-head .head-name {
+  margin: 0 0 0 8px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #323232;
+  font-weight: bold;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-head .head-time {
+  margin: 0 0 0 8px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #989898;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-body {
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-left: 44px;
+  font-weight: 400;
+  color: #323232;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-function-feild {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 44px;
+  width: 100%;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-function-feild .btn-func-comment {
+  width: 24px;
+  height: 24px;
+  margin: 6px 8px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-function-feild .btn-func-comment img {
+  width: inherit;
+  height: auto;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .comment-function-feild .comment-thumb-number {
+  margin-left: calc(100% - 164px);
+  font-size: 13px;
+  color: #989898;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 44px;
+  padding: 4px;
+  width: calc(100% - 44px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-head .reply-head-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-head .reply-head-icon img {
+  width: inherit;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-head .reply-head-name {
+  padding: 0 0 0 6px;
+  color: #323232;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-head .reply-head-time {
+  padding: 0 0 0 8px;
+  color: #989898;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-body {
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-left: 34px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-body .reply-body-pic {
+  margin: 4px 0;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-body .reply-body-pic img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: inherit;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-func-feild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+  padding: 6px 0 6px 8px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-func-feild .btn-reply-thumb {
+  margin: 0 12px 0 0;
+  width: 18px;
+  height: 18px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-func-feild .btn-reply-thumb img {
+  width: inherit;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-func-feild .btn-reply-message {
+  width: 18px;
+  height: 18px;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-func-feild .btn-reply-message img {
+  width: inherit;
+}
+
+body .braver-popup-container .post-area .post-main-content .post-body .post-comment-feild .reply-feild .reply-func-feild p {
+  color: #989898;
+  font-size: 11px;
+  line-height: 19px;
+  margin-left: calc(100% - 113px);
+}
+
+body .braver-popup-container .post-area .download-ad {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fafafa;
+}
+
+body .braver-popup-container .post-area .download-ad a {
+  display: inline-block;
+  height: 28px;
+  margin: 0 4px;
+}
+
+body .braver-popup-container .post-area .download-ad a img {
+  width: auto;
+  height: 28px;
+}
+
+/*# sourceMappingURL=web-braver-view.css.map */

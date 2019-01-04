@@ -1,0 +1,1273 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ins, a {
+  text-decoration: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  outline: 0;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: 0;
+}
+
+[contenteditable=true] {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.wrap .nav-form {
+  position: fixed;
+  width: 100%;
+  background-color: #46C1CF;
+  z-index: 99999;
+  font-family: Microsoft JhengHei, sans-serif;
+}
+
+.wrap .nav-form .nav {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 42px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .nav-form .nav a {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .nav-form .nav a .bahalogo {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  height: 42px;
+  width: auto;
+}
+
+.wrap .nav-form .nav #toggle-menu {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 3px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.wrap .nav-form .nav #toggle-menu span {
+  width: 32px;
+  height: 3px;
+  background-color: #ffffff;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.wrap .nav-form .nav .menu-is-active span:nth-of-type(1) {
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 50%;
+}
+
+.wrap .nav-form .nav .menu-is-active span:nth-of-type(2) {
+  display: none;
+}
+
+.wrap .nav-form .nav .menu-is-active span:nth-of-type(3) {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+}
+
+.wrap .nav-form .nav .verticlal-open {
+  display: none;
+}
+
+.wrap .nav-form .nav .vertical-menu {
+  float: right;
+  position: relative;
+  padding: 0 16px 0 0;
+}
+
+.wrap .nav-form .nav .vertical-menu li {
+  display: inline-block;
+  height: 42px;
+  width: 128px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .nav-form .nav .vertical-menu li a {
+  display: block;
+  line-height: 42px;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #46C1CF;
+}
+
+.wrap .nav-form .nav .vertical-menu .act-page {
+  background-color: #3EADB9;
+}
+
+.wrap .container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrap .container .section-intro-header {
+  position: relative;
+  margin-top: 42px;
+  overflow-x: hidden;
+}
+
+.wrap .container .section-intro-header .bg-head-fans {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+  position: relative;
+  height: 840px;
+  max-width: 2500px;
+}
+
+.wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  left: 10%;
+  bottom: 30px;
+}
+
+.wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-logo {
+  height: 500px;
+  margin: 0 30px 30px 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-detail {
+  margin: 0 0 8% 2%;
+  height: 150px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.wrap .container .section-lottery-act {
+  font-family: Microsoft JhengHei, sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -7px;
+  width: inherit;
+  background: url(../img/landingpage-lottery/bg-lottery-main-page.jpg) repeat;
+  background-size: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area p {
+  color: white;
+  padding: 40px 0 20px 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: center;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 60px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-ps4-pic {
+  border-radius: 100%;
+  margin-right: 10%;
+  height: 320px;
+  overflow: hidden;
+  border: 8px solid #FFD071;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-ps4-pic img {
+  height: 100%;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-icon-pic {
+  border-radius: 100%;
+  height: 180px;
+  overflow: hidden;
+  border: 8px solid #FFD071;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-icon-pic img {
+  height: 100%;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-01 {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 80px;
+  height: 80px;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-02 {
+  position: absolute;
+  bottom: 103px;
+  left: 174px;
+  width: 50px;
+  height: 50px;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-03 {
+  position: absolute;
+  top: 41px;
+  right: 424px;
+  width: 20px;
+  height: 20px;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-04 {
+  position: absolute;
+  bottom: 73px;
+  right: 465px;
+  width: 40px;
+  height: 40px;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-05 {
+  position: absolute;
+  top: 124px;
+  right: 120px;
+  width: 50px;
+  height: 50px;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 48px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin: 20px 0;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery a img {
+  padding: 10px;
+  height: 140px;
+  cursor: pointer;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323232;
+  padding: 24px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member img {
+  margin: 0 12px;
+  width: auto;
+  height: 40px;
+}
+
+.wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member img:nth-of-type(1) {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  font-family: Microsoft JhengHei, sans-serif;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail h1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -20px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 600;
+  padding: 0 50px;
+  color: #ffffff;
+  background-color: #308690;
+  z-index: 2;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 8px;
+  line-height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content .act-title {
+  width: 100px;
+  font-weight: 600;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content .act-detail {
+  width: 600px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 700px;
+  margin: 16px auto;
+  font-size: 20px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area .content-title {
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area ul {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 100%;
+  line-height: 22px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area ul li {
+  margin-left: 2px;
+  line-height: 32px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area .QR-area-lottery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  margin: 20px 0;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area .QR-area-lottery a {
+  border: 1px solid #eaeaea;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area .QR-area-lottery a:nth-of-type(1) {
+  margin-right: 8px;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area .QR-area-lottery a img {
+  padding: 10px;
+  height: 140px;
+  cursor: pointer;
+}
+
+.wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-lottery-post {
+  border: 1px solid #f9f9f9;
+  height: 250px;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear {
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 120px 0;
+  padding: 8px;
+  width: 100%;
+  max-width: 1080px;
+  background: repeating-linear-gradient(45deg, #E8CE46, #FFFFFB, #E8CE46);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .act-award-title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -20px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 600;
+  padding: 0 50px;
+  color: #ffffff;
+  background-color: #308690;
+  z-index: 2;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0;
+  width: 100%;
+  background-color: #C28572;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 768px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 8px 8px 0px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 8px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card img {
+  height: 200px;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card .reward-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 8px;
+  width: 100%;
+  max-width: 568px;
+  color: #4a4a4a;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card .reward-card-content p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #9b9b9b;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 16px auto;
+  color: #ffffff;
+  width: 100%;
+  max-width: 768px;
+  font-size: 18px;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-notice h1 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-notice ul {
+  width: 100%;
+  list-style-type: decimal;
+}
+
+.wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-notice ul li {
+  line-height: 36px;
+  margin-left: 19px;
+}
+
+.wrap .container .section-lottery-act .lottery-right-icon {
+  position: absolute;
+  top: 30%;
+  right: -20px;
+  height: 250px;
+}
+
+.wrap .container .section-lottery-act .lottery-left-icon {
+  position: absolute;
+  top: 60%;
+  left: -20px;
+  height: 250px;
+}
+
+.wrap .container .section-fansclub-follow {
+  position: relative;
+  padding: 42px 0;
+  width: inherit;
+  background: url(../img/landingpage-opentest/bg-opentest.jpg) repeat center;
+  background-size: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Microsoft JhengHei, sans-serif;
+}
+
+.wrap .container .section-fansclub-follow .follow-content {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .fans-title {
+  margin: 42px 0;
+  font-weight: 600;
+  color: #323232;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  line-height: 67px;
+  font-weight: 600;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .fans-title .btn-follow {
+  display: inline-block;
+  margin: 0 0 4px -5px;
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form {
+  position: relative;
+  width: 100%;
+  font-size: 24px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .art-title {
+  color: #989898;
+  line-height: 40px;
+  width: 100%;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(1) {
+  margin: 0 4px 4px 36px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(3) {
+  margin: 48px 4px 4px 36px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .art-title .ic-fansclub {
+  display: inline-block;
+  width: 18px;
+  height: auto;
+  margin: 7px 0 0 0;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 0 0 16px;
+  width: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content {
+  position: relative;
+  margin: 16px 16px 0 0;
+  width: 280px;
+  height: 187px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content .fans-bg-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content .fans-bg-form .bg-fans {
+  height: 100%;
+  width: auto;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content .fans-hover-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  border-radius: 3px;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content .fans-hover-form:hover .fans-name {
+  color: #46C1CF;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content .fans-hover-form .bg-head-icon {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 48px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content .fans-hover-form .fans-name {
+  position: absolute;
+  bottom: 8px;
+  left: 64px;
+  padding: 4px 0;
+  line-height: 28px;
+  font-size: 20px;
+  color: #ffffff;
+  max-width: 208px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80px;
+  font-family: Microsoft JhengHei, sans-serif;
+  background-color: #308690;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 2500px) {
+  .wrap .container .section-intro-header .bg-head-fans {
+    background-color: #308690;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(80, 80, 80, 0.4);
+            box-shadow: 0px 0px 3px 3px rgba(80, 80, 80, 0.4);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 2060px) {
+  .wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 2059px) {
+  .wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+    height: 850px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+    height: 700px;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    left: 10%;
+    bottom: 30px;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-logo {
+    height: 400px;
+    margin: 0 30px 30px 30px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-detail {
+    margin: 0 0 8% 0%;
+    height: 115px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery {
+    right: 0;
+  }
+  .wrap .container .section-lottery-act .lottery-right-icon {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-left-icon {
+    display: none;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .fans-title {
+    margin: 0 0 42px 0;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(1) {
+    margin: 0 4px 4px 6%;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(3) {
+    margin: 36px 4px 4px 6%;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form {
+    margin-left: 5%;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+    height: 700px;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-logo {
+    height: 400px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-detail {
+    margin: 0 0 8% 0%;
+    height: 115px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area {
+    margin: 0;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-ps4-pic {
+    display: block;
+    height: 300px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0 0 40px 0;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-icon-pic {
+    display: block;
+    position: relative;
+    height: 240px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-02 {
+    top: 403px;
+    left: 70px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-03 {
+    top: 320px;
+    right: 328px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-04 {
+    bottom: 400px;
+    right: 165px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 20px auto;
+    width: 100%;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery img {
+    padding: 30px;
+    height: 220px;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail h1 {
+    top: 0;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-text-area .QR-area-lottery {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear {
+    margin: 0;
+    background: #C28572;
+    padding: 40px 40px;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .fans-title {
+    margin: 0 0 42px 0;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(1) {
+    margin: 0 4px 4px 7.5%;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(3) {
+    margin: 36px 4px 4px 7.5%;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form {
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wrap .nav-form .nav .toggle-menu {
+    display: block;
+    z-index: 11;
+  }
+  .wrap .nav-form .nav .vertical-menu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    padding: 0 16px 0 0;
+  }
+  .wrap .nav-form .nav .vertical-menu li {
+    display: block;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area p {
+    padding: 40px 16px 20px 16px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-ps4-pic {
+    height: 320px;
+    width: 320px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-01 {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-02 {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-03 {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-04 {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-light-05 {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 20px auto;
+    width: 100%;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery img {
+    padding: 30px;
+    height: 220px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member {
+    padding: 36px 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 16px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member img {
+    height: 60px;
+    padding: 0 0 12px 0;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member img:nth-of-type(2) {
+    display: none;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .congratuation-member span {
+    font-size: 18px;
+    text-align: center;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content .act-title {
+    width: 600px;
+    font-weight: 600;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content .act-detail {
+    width: 100%;
+    max-width: 600px;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-lottery-post {
+    width: 450px;
+    height: auto;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    background: #C28572;
+    padding: 40px 40px;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area {
+    padding: 0;
+    max-width: 480px;
+    margin: auto;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 36px;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card img {
+    padding: 16px;
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .wrap .container .section-fansclub-follow {
+    padding: 0px 0px 32px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .fans-title {
+    font-size: 32px;
+    padding-top: 36px;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title {
+    text-align: center;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(1) {
+    margin: 0;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .art-title:nth-of-type(3) {
+    margin: 0;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form {
+    margin: 0 auto;
+    padding: 0 0 24px 0;
+    width: 100%;
+    max-width: 472px;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content {
+    margin: 16px 16px 0 0;
+    width: 220px;
+    height: 147px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrap .container .section-intro-header .bg-head-fans .bg-lottery-main-banner {
+    height: 600px;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-logo {
+    height: 340px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .wrap .container .section-intro-header .bg-head-fans .banner-flex-adjust .bg-lottery-banner-detail {
+    margin: 0 0 8% 0%;
+    height: 90px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area p {
+    padding: 20px 16px 20px 16px;
+    line-height: 48px;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .reward-icon-pic {
+    height: 240px;
+    width: 240px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery {
+    margin: 10px auto;
+  }
+  .wrap .container .section-lottery-act .lottery-banner-reward-area .lottery-reward-form .QR-area-lottery img {
+    padding: 15px;
+    height: 180px;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail h1 {
+    padding: 0 30px;
+  }
+  .wrap .container .section-lottery-act .lottery-act-detail .act-text-content-pic .act-lottery-post {
+    width: 320px;
+    height: auto;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .act-award-title {
+    padding: 0 20px;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card {
+    padding: 8px;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card img {
+    padding: 0;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card .reward-card-content {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .wrap .container .section-lottery-act .lottery-reward-area-linear .lottery-reward-area .lottery-reward-card .reward-card-content p {
+    line-height: 24px;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .fans-title {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 36px;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form {
+    padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .wrap .container .section-fansclub-follow .follow-content .art-form .item-flex-form .fans-content {
+    margin: 16px 0 0 0;
+    width: 320px;
+    height: 214px;
+  }
+}
+
+/*# sourceMappingURL=all-landing-page-lottery.css.map */
