@@ -16,6 +16,8 @@
     <script src="js/particles.js"></script>
     <script>
       jQuery(document).ready(function($) {
+
+      //設定paritclesJS參數 開始
         jQuery(function(){
         particlesJS('particles-js',
         {
@@ -127,12 +129,48 @@
 
   );
      });
-      });
+
+  //設定particlesJS參數 結束 
+    $(window).scroll(function() {
+      countheight();
+    });
+    $(window).resize(function(){
+      countheight();
+    });
+    $(document).load(function(){
+       countheight();
+    });
+
+    function countheight(){
+      var gh = [7],
+          ch = $(document).scrollTop() + $(window).height();
+      for(var i =2;i<=8;i++){
+        var u = i-2;
+        var sec = $(".containerv2 .sec-area:nth-of-type("+i+")");
+        var secoffset = sec.offset().top+300;
+        gh[u] = secoffset;
+        if(ch > gh[u]){
+          showanimate(sec);
+        }
+      }
+    }
+    function showanimate(sec){
+      sec.children('.card-area').addClass("c-a-animate");
+      setTimeout(function(){
+        setTimeout(function(){
+          sec.children('.card-img').addClass("c-i-animate")
+        },800),
+        sec.children('.card-area').children('.card-title').addClass("c-c-animate")
+        sec.children('.card-area').children('.card-content').addClass("c-c-animate")
+      },600);
+    }
+  });
     </script>
   </head>
   <body>
     <div class="wrapv2">
       <div id="particles-js"></div>
+      <a href="https://www.gamer.com.tw/" class="baha_logo" target="_blank"><img src="img/landingpage-download/bahalogocolor.png"></a>
       <div class="headerv2">
         <div class="pic-front">
           <img src="img/landingpage-download/header-braver.png" alt="">
@@ -258,6 +296,9 @@
             <img src="img/landingpage-download/sec07-pic.png" alt="">
           </div>
         </div>
+      </div>
+      <div class="footer">
+        旺普網路資訊股份有限公司©All Rights Reserved.
       </div>
     </div>
   </body>
