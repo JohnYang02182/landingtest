@@ -427,18 +427,6 @@ body {
   20% {
     opacity: 0;
   }
-  60% {
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
-  }
-  75% {
-    -webkit-transform: translate3d(15px, 0, 0);
-    transform: translate3d(15px, 0, 0);
-  }
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
-  }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -454,18 +442,6 @@ body {
   }
   20% {
     opacity: 0;
-  }
-  60% {
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
-  }
-  75% {
-    -webkit-transform: translate3d(15px, 0, 0);
-    transform: translate3d(15px, 0, 0);
-  }
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
   }
   to {
     opacity: 1;
@@ -537,6 +513,7 @@ body #particles-js {
   top: 0;
   left: 0;
   background-color: transparent;
+  z-index: 1;
 }
 
 body .baha_logo {
@@ -545,6 +522,7 @@ body .baha_logo {
   left: 3%;
   width: 12em;
   height: auto;
+  z-index: 1;
 }
 
 body .baha_logo img {
@@ -563,6 +541,7 @@ body .headerv2 {
   width: 100%;
   max-width: 1200px;
   height: 700px;
+  z-index: 2;
 }
 
 body .headerv2 .pic-front {
@@ -629,6 +608,7 @@ body .headerv2 .headerv2-main .qr-area {
           align-items: center;
   max-width: 600px;
   width: 100%;
+  z-index: 1;
 }
 
 body .headerv2 .headerv2-main .qr-area .qr-dw-area {
@@ -638,7 +618,6 @@ body .headerv2 .headerv2-main .qr-area .qr-dw-area {
   width: 100%;
   height: 100%;
   max-width: 140px;
-  max-height: 140px;
   color: #308690;
 }
 
@@ -690,7 +669,6 @@ body .containerv2 .container-bg {
           align-items: center;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 body .containerv2 .container-bg img {
@@ -805,8 +783,8 @@ body .containerv2 .sec-area .card-area {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 3% 58px 3% 3%;
-  z-index: 1;
   opacity: 0;
+  z-index: 1;
 }
 
 body .containerv2 .sec-area .card-area .card-title {
@@ -837,14 +815,14 @@ body .containerv2 .sec-area .card-area .card-content {
 }
 
 body .containerv2 .sec-area .card-area .c-c-animate {
-  -webkit-animation: card-content 0.6s;
-          animation: card-content 0.6s;
+  -webkit-animation: card-content 0.3s;
+          animation: card-content 0.3s;
   opacity: 1;
 }
 
 body .containerv2 .sec-area .c-a-animate {
-  -webkit-animation: card-bg 0.8s;
-          animation: card-bg 0.8s;
+  -webkit-animation: card-bg 0.6s;
+          animation: card-bg 0.6s;
   opacity: 1;
 }
 
@@ -868,8 +846,8 @@ body .containerv2 .sec-area .card-img img {
 }
 
 body .containerv2 .sec-area .c-i-animate {
-  -webkit-animation: card-img 0.5s;
-          animation: card-img 0.5s;
+  -webkit-animation: card-img 0.4s;
+          animation: card-img 0.4s;
   opacity: 1;
 }
 
@@ -1030,8 +1008,11 @@ body .footer {
   body {
     font-size: 12px;
   }
+  body .wrapv2 .headerv2 {
+    height: 500px;
+  }
   body .wrapv2 .headerv2 .headerv2-main .sub-title {
-    margin: 20px 0 30% 0;
+    margin: 20px 0 15% 0;
     font-size: 1.4em;
     line-height: 1.2;
   }
@@ -1041,6 +1022,15 @@ body .footer {
   }
   body .wrapv2 .containerv2 .sec-area {
     padding: 16% 5% 0 5%;
+  }
+  body .wrapv2 .containerv2 .sec-area:nth-of-type(3) .card-img {
+    margin: -10px 30% 0 0;
+  }
+  body .wrapv2 .containerv2 .sec-area:nth-of-type(5) .card-img {
+    margin: -10px 30% 0 0;
+  }
+  body .wrapv2 .containerv2 .sec-area:nth-of-type(7) .card-img {
+    margin: -10px 30% 0 0;
   }
   body .wrapv2 .containerv2 .sec-area .card-img {
     margin: -10px 0 0 30%;

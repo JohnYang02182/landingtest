@@ -46,14 +46,14 @@
         "value": 1,
         "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 2,
           "opacity_min": 0,
           "sync": false
         }
       },
       "size": {
-        "value": 4,
+        "value": 5,
         "random": false,
         "anim": {
           "enable": false,
@@ -71,7 +71,7 @@
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 4,
         "direction": "top",
         "random": false,
         "straight": false,
@@ -159,10 +159,10 @@
       setTimeout(function(){
         setTimeout(function(){
           sec.children('.card-img').addClass("c-i-animate")
-        },800),
+        },400),
         sec.children('.card-area').children('.card-title').addClass("c-c-animate")
         sec.children('.card-area').children('.card-content').addClass("c-c-animate")
-      },600);
+      },400);
     }
   });
     </script>
@@ -179,14 +179,14 @@
           <img src="img/landingpage-download/header-title.png" alt="">
           <div class="sub-title">幫你蒐集喜歡的新聞、話題、小屋、商城最新動態</div>
           <div class="qr-area">
-            <div class="qr-dw-area">
+            <a href="https://itunes.apple.com/us/app/%E5%8B%87%E8%80%85%E5%8B%95%E6%85%8B%E7%89%86/id1395060753?l=zh&ls=1&mt=8" target="_blank" class="qr-dw-area">
               <img src="img/landingpage-download/qr-appstore.png" alt="">
               iOS下載
-            </div>
-            <div class="qr-dw-area">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=tw.com.gamer.wall" target="_blank" class="qr-dw-area">
               <img src="img/landingpage-download/qr-googleplay.png" alt="">
               Android下載
-            </div>
+            </a>
           </div>
         </div>
         <div class="pic-back">
