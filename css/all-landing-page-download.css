@@ -588,6 +588,14 @@ body .headerv2 .headerv2-main img {
   height: auto;
 }
 
+body .headerv2 .headerv2-main .main-title {
+  font-size: 2.3em;
+  color: #308690;
+  line-height: 1;
+  margin-top: 10%;
+  font-weight: 600;
+}
+
 body .headerv2 .headerv2-main .sub-title {
   font-size: 2em;
   color: #308690;
@@ -912,8 +920,11 @@ body .footer {
         -ms-flex: 4;
             flex: 4;
   }
+  body .wrapv2 .headerv2 .headerv2-main .main-title {
+    margin-top: 10%;
+  }
   body .wrapv2 .headerv2 .headerv2-main .sub-title {
-    margin: 5% 0;
+    margin-bottom: 5%;
     line-height: 1.5;
     text-align: center;
   }
@@ -945,8 +956,13 @@ body .footer {
   body .wrapv2 .headerv2 .headerv2-main {
     padding: 4%;
   }
+  body .wrapv2 .headerv2 .headerv2-main .main-title {
+    margin-top: 5%;
+    font-size: 2em;
+    line-height: 1.4;
+  }
   body .wrapv2 .headerv2 .headerv2-main .sub-title {
-    margin: 20px 0 20% 0;
+    margin: 0 0 20% 0;
     font-size: 1.6em;
     line-height: 1.2;
   }
@@ -1011,10 +1027,13 @@ body .footer {
   body .wrapv2 .headerv2 {
     height: 500px;
   }
+  body .wrapv2 .headerv2 .headerv2-main .main-title {
+    margin-top: 25px;
+    font-size: 1.6em;
+  }
   body .wrapv2 .headerv2 .headerv2-main .sub-title {
-    margin: 20px 0 15% 0;
+    margin: 4px 0 15% 0;
     font-size: 1.4em;
-    line-height: 1.2;
   }
   body .wrapv2 .headerv2 .headerv2-main .qr-area .qr-dw-area {
     width: 120px;
@@ -1036,6 +1055,15 @@ body .footer {
     margin: -10px 0 0 30%;
     width: 240px;
     height: 240px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 12px;
+  }
+  body .wrapv2 .headerv2 .pic-front {
+    display: none;
   }
 }
 
