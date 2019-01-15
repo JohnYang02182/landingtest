@@ -749,7 +749,7 @@ body #wrap .section-qa .menu .menu-content .menu-title {
 }
 
 body #wrap .section-qa .menu .menu-content .menu-answer {
-  padding: 0;
+  padding: 0 32px;
   max-height: 0;
   font-size: 15px;
   color: #6F6F6F;
@@ -760,7 +760,31 @@ body #wrap .section-qa .menu .menu-content .menu-answer {
 }
 
 body #wrap .section-qa .menu .menu-content .menu-answer .section-text {
-  margin: 16px 32px 8px 32px;
+  margin: 16px 0 8px 0;
+}
+
+body #wrap .section-qa .menu .menu-content .menu-answer .section-img-block {
+  position: relative;
+  margin: 8px 0 12px 0;
+  max-width: 600px;
+  width: 100%;
+  height: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #323232;
+  overflow: hidden;
+}
+
+body #wrap .section-qa .menu .menu-content .menu-answer .section-img-block img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: inherit;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(180, 180, 180, 0.1);
+          box-shadow: 0px 0px 20px 10px rgba(180, 180, 180, 0.1);
 }
 
 body #wrap .section-qa .menu .menu-content .menu-answer a {
@@ -768,8 +792,7 @@ body #wrap .section-qa .menu .menu-content .menu-answer a {
 }
 
 body #wrap .section-qa .menu .menu-content .menu-answer ul {
-  padding: 0 32px 8px 56px;
-  display: list-item;
+  padding: 0 32px 8px 20px;
   list-style-position: outside;
   list-style-type: disc;
 }

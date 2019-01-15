@@ -1,0 +1,29 @@
+// 手機螢幕自適性調整 //
+@media only screen and (min-width: 320px) {
+    .input-box {
+      width: 60%;
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    .input-box {
+      width: 70%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+   .input-box {
+      width: 77%;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .input-box {
+      width: 80%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .input-box {
+      width: 90%;
+    }
+}

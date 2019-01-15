@@ -1,0 +1,39 @@
+//Define the font of the landing page
+$logbefore-title-font: Microsoft JhengHei, sans-serif !default; // 華康漆隸 font family
+$logbefore-content-font:  Microsoft JhengHei, sans-serif !default;
+
+//Define the color of the landing page
+$nav-color: #308690;
+$act-color: #3EADB9;
+$btn-act-color: #41B7C4;
+$main-pro-color: #46C1CF;
+$title-color: #fdb2cc;
+$text-color-dark: #626262;
+$text-color-white: #ffffff;
+$text-color-light: #f9f9f9;
+$btn-scroll-color: #f6e0d5;
+$btn-shadow: #b7456d;
+$btn-logbefore-color: #ec90b0;
+$font-dark: #323232;
+
+//Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min: 480px !default;
+
+// Small screen / tablet
+$screen-sm-min: 780px !default;
+
+// Medium screen / desktop
+$screen-md-min: 995px !default;
+
+// Large screen / wide desktop
+$screen-lg-min: 1200px !default;
+
+// Large scree / wider desktop
+$screen-lg-med: 1600px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>particle_範例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="css/simple.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+
+      //設定paritclesJS參數 開始
+        jQuery(function(){
+        particlesJS('particles-js',
+        {
+    "particles": {
+      "number": {
+        "value": 60
+      },
+      "color": {
+        "value": "#308690"
+      },
+      "shape": {
+        "type": "image",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        // "polygon": {
+        //   "nb_sides": 5
+        // }
+        "image": {
+          "src": "img/landingpage-lottery/pic-light.png",
+          "width": "100",
+          "height": "100"
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 2,
+          "opacity_min": 0,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 4,
+          "size_min": 0.3,
+          "sync": false
+        }
+      },
+      "move": {
+        "enable": true,
+        "speed": 4,
+        "direction": "top",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+      }
+    },
+    "retina_detect": false
+  }
+    
+
+  );
+     });
+
+  //設定particlesJS參數 結束 
+    
+  });
+    </script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+  </body>
+</html>

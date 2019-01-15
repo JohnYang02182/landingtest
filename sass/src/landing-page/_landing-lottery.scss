@@ -1,0 +1,1063 @@
+.wrap{
+  .nav-form{
+    position: fixed;
+    width: 100%;
+    background-color: $main-pro-color;
+    z-index: 99999;
+    font-family: $logbefore-title-font;
+    .nav{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 42px;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto 0;
+      box-sizing: border-box;
+      a{
+        width: 100%;
+        height: 100%;
+        .bahalogo{
+          position: absolute;
+          top: 0;
+          left: 32px;
+          height: 42px;
+          width: auto;
+        }
+      }
+      #toggle-menu{
+        display: none;
+        position: absolute;
+        right: 16px;
+        top: 3px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        span{
+          width: 32px;
+          height: 3px;
+          background-color: $text-color-white;
+          align-self: center;
+        }
+      }
+      .menu-is-active{
+        span{
+          &:nth-of-type(1){
+            position: absolute;
+            transform: rotate(-45deg);
+            top: 50%;
+          }
+          &:nth-of-type(2){
+            display: none;
+          }
+          &:nth-of-type(3){
+            position: absolute;
+            transform: rotate(45deg);
+            top: 50%;
+          }
+        }
+      }
+      .verticlal-open{
+        display: none;
+      }
+      .vertical-menu{
+        float: right;
+        position: relative;
+        padding: 0 16px 0 0;
+        li{
+          display: inline-block;
+          height: 42px;
+          width: 128px;
+          box-sizing: border-box;
+          a{
+            display: block;
+            line-height: 42px;
+            font-size: 17px;
+            text-align: center;
+            color: $text-color-white;
+            background-color: $main-pro-color;
+          }
+        }
+        .act-page{
+          background-color: $act-color;
+        }
+      }
+    }
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    .section-intro-header{
+      position: relative;
+      margin-top: 42px;
+      overflow-x: hidden;
+      .bg-head-fans{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .bg-lottery-main-banner{
+          position: relative;
+          height: 840px;
+          max-width: 2500px;
+        }
+        .banner-flex-adjust{
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+          left: 10%;
+          bottom: 30px;
+          .bg-lottery-banner-logo{
+            height: 500px;
+            margin: 0 30px 30px 30px;
+            align-self: flex-end;
+          }
+          .bg-lottery-banner-detail{
+            margin: 0 0 8% 2%;
+            height: 150px;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+    .section-lottery-act{
+      font-family: $logbefore-title-font;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-top: -7px;
+      width: inherit;
+      background: url(../img/landingpage-lottery/bg-lottery-main-page.jpg) repeat;
+      background-size: 5%;
+      box-sizing: border-box;
+      .lottery-banner-reward-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 60px;
+        background-color: rgba(0,0,0,0.7);
+        p{
+          color: white;
+          padding: 40px 0 20px 0;
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 64px;
+          text-align: center;
+        }
+        .lottery-reward-form{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          padding: 0 0 60px 0;
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+          .reward-ps4-pic{
+            border-radius: 100%;
+            margin-right: 10%;
+            height: 320px;
+            overflow: hidden;
+            border: 8px solid #FFD071;
+            box-sizing: border-box;
+            align-self: center;
+            img{
+              height: 100%;
+            }
+          }
+          .reward-icon-pic{
+            border-radius: 100%;
+            height: 180px;
+            overflow: hidden;
+            border: 8px solid #FFD071;
+            box-sizing: border-box;
+            align-self: center;
+            img{
+              height: 100%;
+            }
+          }
+          .reward-light-01{
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            width: 80px;
+            height: 80px;
+          }
+          .reward-light-02{
+            position: absolute;
+            bottom: 103px;
+            left: 174px;
+            width: 50px;
+            height: 50px;
+          }
+          .reward-light-03{
+            position: absolute;
+            top: 41px;
+            right: 424px;
+            width: 20px;
+            height: 20px;
+          }
+          .reward-light-04{
+            position: absolute;
+            bottom: 73px;
+            right: 465px;
+            width: 40px;
+            height: 40px;
+          }
+          .reward-light-05{
+            position: absolute;
+            top: 124px;
+            right: 120px;
+            width: 50px;
+            height: 50px;
+          }
+          .QR-area-lottery{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 48px;
+            justify-content: flex-end;
+            align-self: end;
+            margin: 20px 0;
+            a{
+              img{
+                padding: 10px;
+                height: 140px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .congratuation-member{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; 
+          background-color: #323232;
+          padding: 24px;
+          font-size: 18px;
+          color: #fff;
+          line-height: 26px;
+          font-weight: bold;
+          img{
+            margin: 0 12px;
+            width: auto;
+            height: 40px;
+            &:nth-of-type(1){
+              transform: scaleX(-1);
+            }
+          }
+        }
+      }
+      .lottery-act-detail{
+        position: relative;
+        background-color: $text-color-white;
+        padding: 40px 20px;
+        width: 100%;
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-family: $logbefore-title-font;
+        margin: auto;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        z-index: 1;
+        h1{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -20px;
+          text-align: center;
+          font-size: 24px;
+          line-height: 42px;
+          font-weight: 600;
+          padding: 0 50px;
+          color: $text-color-white;
+          background-color: $nav-color;
+          z-index: 2;
+        }
+        .act-text-content{
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 8px;
+          line-height: 32px;
+          justify-content: center;
+          font-size: 20px;
+          .act-title{
+            width: 100px;
+            font-weight: 600;
+          }
+          .act-detail{
+            width: 600px;
+          }
+        }
+        .act-text-content-pic{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          max-width: 700px;
+          margin: 16px auto;
+          font-size: 20px;
+          .act-text-area{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            .content-title{
+              font-weight: 600;
+              line-height: 32px;
+            }
+            ul{
+              align-self: flex-start;
+              width: 100%;
+              line-height: 22px;
+              li{
+                margin-left: 2px;
+                line-height: 32px;
+              }
+            }
+            .QR-area-lottery{
+              display: flex;
+              justify-content: flex-end;
+              align-self: baseline;
+              margin: 20px 0;
+              a{
+                border: 1px solid #eaeaea;
+                &:nth-of-type(1){
+                  margin-right: 8px;
+                }
+                img{
+                  padding: 10px;
+                  height: 140px;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .act-lottery-post{
+            border: 1px solid $text-color-light;
+            height: 250px;
+          }
+        }
+      }
+      .lottery-reward-area-linear{
+        position: relative;
+        align-self: center;
+        margin: 120px 0;
+        padding: 8px;
+        width: 100%;
+        max-width: 1080px;
+        background: repeating-linear-gradient(45deg,#E8CE46 ,#FFFFFB, #E8CE46);
+        box-sizing: border-box;
+        border-radius: 5px;
+        z-index: 1;
+        .act-award-title{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -20px;
+          text-align: center;
+          font-size: 24px;
+          line-height: 42px;
+          font-weight: 600;
+          padding: 0 50px;
+          color: $text-color-white;
+          background-color: $nav-color;
+          z-index: 2;
+        }
+        .lottery-reward-area{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          padding: 40px 0;
+          width: 100%;
+          background-color: #C28572;
+          box-sizing: border-box;
+          .lottery-reward-card{
+            display: flex;
+            justify-content: center;
+            padding: 16px;
+            margin: 40px auto;
+            background-color: $text-color-white;
+            width: 100%;
+            max-width: 768px;
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 600;
+            box-sizing: border-box;
+            box-shadow: 8px 8px 0px 4px rgba(0,0,0,0.3);
+            img{
+              height: 200px;
+            }
+            .reward-card-content{
+              display: flex;
+              flex-direction: column;
+              margin: 0 0 0 8px;
+              width: 100%;
+              max-width: 568px;
+              color: #4a4a4a;
+              p{
+                font-size: 14px;
+                line-height: 30px;
+                color: #9b9b9b;
+              }
+            }
+          }
+          .lottery-reward-notice{
+            display: flex;
+            flex-direction: column;
+            margin: 16px auto;
+            color: $text-color-white;
+            width: 100%;
+            max-width: 768px;
+            font-size: 18px;
+            h1{
+              font-size: 24px;
+              line-height: 36px;
+              font-weight: 600;
+              width: 100%;
+              text-align: center;
+              margin-bottom: 8px;
+            }
+            ul{
+              width: 100%;
+              list-style-type: decimal;
+              li{
+                line-height: 36px;
+                margin-left: 19px;
+              }
+            }
+          }
+        }
+      }
+      .lottery-right-icon{
+        position: absolute;
+        top: 30%;
+        right: -20px;
+        height: 250px;
+      }
+      .lottery-left-icon{
+        position: absolute;
+        top: 60%;
+        left: -20px;
+        height: 250px;
+      }
+    }
+    .section-fansclub-follow{
+      position: relative;
+      padding: 42px 0;
+      width: inherit;
+      background: url(../img/landingpage-opentest/bg-opentest.jpg) repeat center;
+      background-size: 30%;
+      box-sizing: border-box;
+      font-family: $logbefore-title-font;
+      .follow-content{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1200px;
+        .fans-title{
+          margin: 42px 0;
+          font-weight: 600;
+          color: #323232;
+          font-size: 40px;
+          text-align: center;
+          width: 100%;
+          line-height: 67px;
+          font-weight: 600;
+          .btn-follow{
+            display: inline-block;
+            margin:0 0 4px -5px;
+            width: 40px;
+            height: auto;
+            vertical-align: middle;
+          }
+        }
+        .art-form{
+          position: relative;
+          width: 100%;
+          font-size: 24px;
+          .art-title{
+            color: #989898;
+            line-height: 40px;
+            width: 100%;
+            &:nth-of-type(1){
+              margin: 0 4px 4px 36px;
+            }
+            &:nth-of-type(3){
+              margin: 48px 4px 4px 36px;
+            }
+            .ic-fansclub{
+              display: inline-block;
+              width: 18px;
+              height: auto;
+              margin: 7px 0 0 0;
+            }
+          }
+          .item-flex-form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0 0 0 16px; 
+            width: inherit;
+            box-sizing: border-box;
+            .fans-content{
+              position: relative;
+              margin: 16px 16px 0 0;
+              width: 280px;
+              height: 187px;
+              &:hover{
+                background: rgba(0,0,0,0.6);
+              }
+              .fans-bg-form{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 3px;
+                .bg-fans{
+                  height: 100%;
+                  width: auto;
+                }
+              }
+              .fans-hover-form{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+                border-radius: 3px;
+                &:hover{
+                  .fans-name{
+                    color: $main-pro-color;
+                  }
+                }
+                .bg-head-icon{
+                  position: absolute;
+                  bottom: 8px;
+                  left: 8px;
+                  width: 48px;
+                  height: auto;
+                  border-radius: 100%;
+                }
+                .fans-name{
+                  position: absolute;
+                  bottom: 8px;
+                  left: 64px;
+                  padding: 4px 0;
+                  line-height: 28px;
+                  font-size: 20px;
+                  color: $text-color-white;
+                  max-width: 208px;
+                  box-sizing: border-box;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  font-family: $logbefore-title-font;
+  background-color: $nav-color;
+  text-align: center;
+  color: $text-color-white;
+  font-size: 18px;
+}
+@media screen and(min-width: 2500px){
+  .wrap{
+    .container{
+      .section-intro-header{
+        .bg-head-fans{
+          background-color: $nav-color;
+          .bg-lottery-main-banner{
+            box-shadow: 0px 0px 3px 3px rgba(80,80,80,0.4);
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 2060px){
+  .wrap{
+    .container{
+      .section-intro-header{
+        .bg-head-fans{
+          .bg-lottery-main-banner{
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 2059px){
+  .wrap{
+    .container{
+      .section-intro-header{
+        .bg-head-fans{
+          .bg-lottery-main-banner{
+            height: 850px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+//1200px
+@media screen and (max-width: $screen-lg-min){
+  .wrap{
+    .container{
+      .section-intro-header{
+       .bg-head-fans{
+          .bg-lottery-main-banner{
+            height: 700px;
+          }
+          .banner-flex-adjust{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 10%;
+            bottom: 30px;
+            .bg-lottery-banner-logo{
+              height: 400px;
+              margin: 0 30px 30px 30px;
+              align-self: flex-end;
+            }
+            .bg-lottery-banner-detail{
+              margin: 0 0 8% 0%;
+              height: 115px;
+              align-self: flex-end;
+            }
+          }
+        }
+      }
+      .section-lottery-act{
+        .lottery-banner-reward-area{
+          .lottery-reward-form{
+            .QR-area-lottery{
+              right: 0;
+            }
+          }
+        }
+        .lottery-right-icon{
+          display: none;
+        }
+        .lottery-left-icon{
+          display: none;
+        }
+      }
+      .section-fansclub-follow{
+        .follow-content{
+          .fans-title{
+            margin: 0 0 42px 0;
+          }
+          .art-form{
+            .art-title{
+              &:nth-of-type(1){
+                margin: 0 4px 4px 6%;
+              }
+              &:nth-of-type(3){
+                margin: 36px 4px 4px 6%;
+              }
+            }
+            .item-flex-form{
+              margin-left: 5%;
+              padding-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//995px
+@media screen and (max-width: $screen-md-min){
+  .wrap{
+    .container{
+      .section-intro-header{
+       .bg-head-fans{
+        .bg-lottery-main-banner{
+          height: 700px;
+        }
+        .banner-flex-adjust{
+          flex-direction: column;
+          justify-content: center;
+          left: 50%;
+          transform: translateX(-50%);
+          .bg-lottery-banner-logo{
+            height: 400px;
+            align-self: center;
+          }
+          .bg-lottery-banner-detail{
+            margin: 0 0 8% 0%;
+            height: 115px;
+            align-self: center;
+          }
+        }
+       }
+      }
+      .section-lottery-act{
+        .lottery-banner-reward-area{
+          margin: 0;
+          .lottery-reward-form{
+            flex-direction: column;
+            justify-content: center;
+            .reward-ps4-pic{
+              display: block;
+              height: 300px;
+              align-self: center;
+              margin: 0 0 40px 0;
+            }
+            .reward-icon-pic{
+              display: block;
+              position: relative;
+              height: 240px;
+              align-self: center;
+            }
+            .reward-light-02{
+              top: 403px;
+              left: 70px;
+            }
+            .reward-light-03{
+              top: 320px;
+              right: 328px;;
+            }
+            .reward-light-04{
+              bottom: 400px;
+              right: 165px;
+            }
+            .QR-area-lottery{
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              margin: 20px auto;
+              width: 100%;
+              img{
+                padding: 30px;
+                height: 220px;
+              }
+            }
+          }
+        }
+        .lottery-act-detail{
+          h1{
+            top: 0;
+          }
+          .act-text-content-pic{
+            .act-text-area{
+              .QR-area-lottery{
+                display: none;
+              }
+            }
+          }
+        }
+        .lottery-reward-area-linear{
+          margin: 0;
+          background: #C28572;
+          padding: 40px 40px;
+        }
+      }
+      .section-fansclub-follow{
+        .follow-content{
+          .fans-title{
+            margin: 0 0 42px 0;
+          }
+          .art-form{
+            .art-title{
+              &:nth-of-type(1){
+                margin: 0 4px 4px 7.5%;
+              }
+              &:nth-of-type(3){
+                margin: 36px 4px 4px 7.5%;
+              }
+            }
+            .item-flex-form{
+              margin-left: 6%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//780px
+@media screen and (max-width: $screen-sm-min){
+  .wrap{
+    .nav-form{
+      .nav{
+       .toggle-menu{
+          display: block;
+          z-index: 11;
+       }
+       .vertical-menu{
+        display: none;
+        position: absolute;
+        top: 42px;
+        right: 0;
+        padding: 0 16px 0 0;
+        li{
+          display: block;
+        }
+       }
+      }
+    }
+    .container{
+      .section-lottery-act{
+        .lottery-banner-reward-area{
+          p{
+            padding: 40px 16px 20px 16px;
+          }
+          .lottery-reward-form{
+            .reward-ps4-pic{
+              height: 320px;
+              width: 320px;
+            }
+            .reward-light-01{
+              display: none;
+            }
+            .reward-light-02{
+              display: none;
+            }
+            .reward-light-03{
+              display: none;
+            }
+            .reward-light-04{
+              display: none;
+            }
+            .reward-light-05{
+              display: none;
+            }
+            .QR-area-lottery{
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              margin: 20px auto;
+              width: 100%;
+              img{
+                padding: 30px;
+                height: 220px;
+              }
+            }
+          }
+          .congratuation-member{
+            padding: 36px 12px;
+            flex-direction: column;
+            font-size: 16px;
+            img{
+              height: 60px;
+              padding: 0 0 12px 0;
+              &:nth-of-type(2){
+                display: none;
+              }
+            }
+            span{
+              font-size: 18px;
+              text-align: center;
+            }
+          }
+        }
+        .lottery-act-detail{
+          .act-text-content{
+            flex-direction: column;
+            .act-title{
+              width: 600px;
+              font-weight: 600;
+            }
+            .act-detail{
+              width: 100%;
+              max-width: 600px;
+            }
+          }
+          .act-text-content-pic{
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            .act-text-area{
+            }
+            .act-lottery-post{
+              width: 450px;
+              height: auto;
+            }
+          }
+        }
+
+        .lottery-reward-area-linear{
+          display: flex;
+          margin: 0;
+          background: #C28572;
+          padding: 40px 40px;
+          .lottery-reward-area{
+            padding: 0;
+            max-width: 480px;
+            margin: auto;
+            .lottery-reward-card{
+              flex-direction: column;
+              padding: 36px;
+              img{
+                padding: 16px;
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+      .section-fansclub-follow{
+        padding: 0px 0px 32px 0;
+        box-sizing: border-box;
+        .follow-content{
+          .fans-title{
+            font-size: 32px;
+            padding-top: 36px;
+          }
+          .art-form{
+            .art-title{
+              text-align: center;
+              &:nth-of-type(1){
+                margin: 0;
+              }
+              &:nth-of-type(3){
+                margin: 0;
+              }
+            }
+            .item-flex-form{
+              margin: 0 auto;
+              padding: 0 0 24px 0;
+              width: 100%;
+              max-width: 472px;
+              .fans-content{
+                margin: 16px 16px 0 0;
+                width: 220px;
+                height: 147px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//480px
+@media screen and (max-width: $screen-xs-min){
+  .wrap{
+    .container{
+      .section-intro-header{
+       .bg-head-fans{
+        .bg-lottery-main-banner{
+          height: 600px;
+        }
+        .banner-flex-adjust{
+          flex-direction: column;
+          justify-content: center;
+          left: 50%;
+          transform: translateX(-50%);
+          .bg-lottery-banner-logo{
+            height: 340px;
+            align-self: center;
+          }
+          .bg-lottery-banner-detail{
+            margin: 0 0 8% 0%;
+            height: 90px;
+            align-self: center;
+          }
+        }
+       }
+      }
+      .section-lottery-act{
+        .lottery-banner-reward-area{
+          p{
+            padding: 20px 16px 20px 16px;
+            line-height: 48px;
+          }
+          .lottery-reward-form{
+            .reward-icon-pic{
+              height: 240px;
+              width: 240px;
+              align-self: center;
+            }
+            .QR-area-lottery{
+              margin: 10px auto;
+              img{
+                padding: 15px;
+                height: 180px;
+              }
+            }
+          }
+        }
+        .lottery-act-detail{
+          h1{
+            padding: 0 30px;
+          }
+          .act-text-content-pic{
+            .act-lottery-post{
+              width: 320px;
+              height: auto;
+            }
+          }
+        }
+
+        .lottery-reward-area-linear{
+          .act-award-title{
+            padding: 0 20px;
+          }
+          .lottery-reward-area{
+            .lottery-reward-card{
+              padding: 8px;
+              img{
+                padding: 0;
+              }
+              .reward-card-content{
+                font-size: 18px;
+                line-height: 28px;
+                p{
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .section-fansclub-follow{
+        .follow-content{
+          .fans-title{
+            font-size: 24px;
+            line-height: 36px;
+            padding-top: 36px;
+          }
+          .art-form{
+            .item-flex-form{
+              padding: 0;
+              justify-content: space-around; 
+              .fans-content{
+                margin: 16px 0 0 0;
+                width: 320px;
+                height: 214px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

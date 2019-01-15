@@ -23,23 +23,24 @@
         {
     "particles": {
       "number": {
-        "value": 60,
-        "density": {
-          "enable": false,
-          "value_area": 800
-        }
+        "value": 60
       },
       "color": {
         "value": "#308690"
       },
       "shape": {
-        "type": "circle",
+        "type": "image",
         "stroke": {
           "width": 0,
           "color": "#000000"
         },
-        "polygon": {
-          "nb_sides": 3
+        // "polygon": {
+        //   "nb_sides": 5
+        // }
+        "image": {
+          "src": "img/landingpage-lottery/pic-light.png",
+          "width": "100",
+          "height": "100"
         }
       },
       "opacity": {
@@ -62,13 +63,6 @@
           "sync": false
         }
       },
-      "line_linked": {
-        "enable": false,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
       "move": {
         "enable": true,
         "speed": 4,
@@ -77,50 +71,6 @@
         "straight": false,
         "out_mode": "out",
         "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 600
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "bubble"
-        },
-        "onclick": {
-          "enable": false,
-          "mode": "repulse"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 623.3766233766235,
-          "size": 0,
-          "duration": 2,
-          "opacity": 0,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 400,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
       }
     },
     "retina_detect": false
@@ -147,7 +97,7 @@
       for(var i =2;i<=8;i++){
         var u = i-2;
         var sec = $(".containerv2 .sec-area:nth-of-type("+i+")");
-        var secoffset = sec.offset().top+300;
+        var secoffset = sec.children(".card-area").offset().top+300;
         gh[u] = secoffset;
         if(ch > gh[u]){
           showanimate(sec);
@@ -156,6 +106,8 @@
     }
     function showanimate(sec){
       sec.children('.card-area').addClass("c-a-animate");
+      var sech = sec.children('.card-area').offset().top;
+
       setTimeout(function(){
         setTimeout(function(){
           sec.children('.card-img').addClass("c-i-animate")

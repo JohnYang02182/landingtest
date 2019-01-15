@@ -1,0 +1,677 @@
+#wrap{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: url("../img/landingpage/bg_logbefore.png") repeat;
+  background-size: 10%;
+  .nav{
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: $nav-color;
+    a{
+      img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        width: 160px;
+      }
+    }
+  }
+  .container{
+    position: relative;
+    .section-intro-header{
+      padding: 60px;
+      color: $text-color-light;
+      font-family: $logbefore-content-font;
+      vertical-align: middle;
+      text-align: center;
+      .title{
+        padding: 60px 0 0 0;
+        font-family: $logbefore-title-font;
+        src: url(../font/華康漆隸體.otf) format('opentype');
+        font-size: 80px;
+        font-weight: 600;
+      }
+      .intro-img{
+        width: 56px;
+        padding: 56px 0;
+      }
+      .intro-content{
+        margin: 0 0 72px 0;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .btn-scroll-to-bottom{
+        margin: 36px 0 20px 0;
+        padding: 16px;
+        border: 1.5px solid $btn-scroll-color;
+        background-color: $btn-scroll-color;
+        border-radius: 10px;
+        font-size: 32px;
+        font-weight: 600;
+        font-family: $logbefore-title-font;
+        color: $main-pro-color;
+        line-height: 64px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        &:hover{
+          color: $nav-color;
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        }
+      }
+      .intro-content-footer{
+        position: relative;
+        margin-bottom: 60px;
+        padding: 20px 0;
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 17px;
+        line-height: 18px;
+        img{
+          position: relative;
+          padding: 8px 4px 0px 0px;
+          height: 26px;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+    }
+    .section-product{
+      .section-product-content{
+        position: relative;
+        width: 100%;
+        background: url("../img/landingpage/bg_info_logbefore.png") repeat;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+        @mixin product-area{
+          position: relative;
+          width: 100%;
+          height: 600px;
+        }
+        @mixin product-text{
+          width: 50%;
+          font-family: $logbefore-title-font;
+          font-size: 32px;
+          color: $text-color-dark;
+          line-height: 56px;
+        }
+        @mixin product-img{
+          position: absolute;
+          width: 50%;
+        }
+        .product-content-01{
+          @include product-area;
+          .product-text-01{
+            @include product-text;
+            position: absolute;
+            top: 220px;
+            left: 40%;
+            text-align: left;
+          }
+          .product-img-01{
+            @include product-img;
+            top: 200px;
+            right: 100px;
+          }
+        }
+        .product-content-02{
+          @include product-area;
+          .product-text-02{
+            @include product-text;
+            position: absolute;
+            top: 220px;
+            left: 40%;
+            text-align: left;
+          }
+          .product-img-02{
+            @include product-img;
+            top: 200px;
+            left: 100px;
+          }
+        }
+        .product-content-03{
+          @include product-area;
+          height: 700px;
+          .product-text-03{
+            @include product-text;
+            position: absolute;
+            top: 220px;
+            left: 40%;
+            text-align: left;
+          }
+          .product-img-03{
+            @include product-img;
+            top: 200px;
+            right: 100px;
+          }
+        }
+      }
+    }
+    .section-activity{
+      width: 100%;
+      height: 650px;
+      padding: 140px 0 60px 0;
+      .activity-title{
+        font-size: 48px;
+        font-family: $logbefore-title-font;
+        color: $text-color-light;
+        text-align: center;
+        .change-color{
+          display: inline-block;
+          color: $title-color;
+        }
+      }
+      .activity-info-section{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 60px 0 20px 0;
+        width: 80%;
+        max-width: 880px;
+        flex-direction: column;
+        font-family: $logbefore-content-font;
+        color: $text-color-light;
+        font-size: 24px;
+        line-height: 32px;
+        .activity-content{    
+          margin: 0 0 12px 0;
+          display: flex;
+          .activity-content-title{
+            display: inline;
+            width: 120px;
+          }
+          .activity-content-text{
+            flex: 1;
+          }
+        }
+        .activity-info-text{
+          padding: 16px 0 0 0;
+          align-items: center;
+        }
+      }
+      .btn-setting-position{
+        position: absolute;
+        left: 50%;
+        margin: 60px 0 0 0;
+        transform: translateX(-50%);
+        .btn-logbefore-google{
+          position: relative;
+          display: inline-block;
+          width: 250px;
+          padding: 18px 0;
+          color: $text-color-white;
+          font-family: $logbefore-title-font;
+          font-size: 24px;
+          text-align: center; 
+          background-color: $btn-logbefore-color; 
+          border: none;
+          border-radius: 20px;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          &:hover{
+            background-color: $btn-shadow;
+            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          }
+          .btn-logbefore-text{      
+            text-align: center;
+            margin-top: 4px;
+            font-size: 16px;
+
+          }
+        }
+        .btn-logbefore-apple{
+          position: relative;
+          display: inline-block;
+          margin: 0 0 0 10px;
+          width: 250px;
+          background-color: $btn-logbefore-color;
+          border-radius: 20px;
+          border: none;
+          text-align: center;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+          padding: 18px 0;
+          color: $text-color-white;
+          font-family: $logbefore-title-font;
+          font-size: 24px;
+          &:hover{
+             background-color: $btn-shadow;
+             box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          }
+          .btn-logbefore-text{
+            text-align: center;
+            margin-top: 4px;
+            font-size: 16px;
+          }
+        }
+      }
+      .foot-info-text{
+        position: absolute;
+        bottom: 10px;
+        color: $text-color-white;
+        font-family: $logbefore-content-font;
+        font-size: 16px;
+        transform: translateX(-50%);
+        left: 50%;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .footer{
+    width: 100%;
+    height: 80px;
+    font-family: $logbefore-title-font;
+    background-color: $nav-color;
+    text-align: center;
+    line-height: 80px;
+    color: $text-color-white;
+    font-size: 18px;
+  }
+}
+
+//1600px
+@media screen and (max-width: $screen-lg-med){
+  #wrap{
+    .container{
+      .section-product{
+        .section-product-content{
+          .product-content-01{
+            height: 600px;
+            .product-text-01{
+              left: 30%;
+              top: 180px;
+            }
+            .product-img-01{
+              right: 100px;
+              top: 180px;
+            }
+          }
+          .product-content-02{
+            height: 600px;
+            .product-text-02{
+              left: 50%;
+              top: 160px;
+            }
+            .product-img-02{
+              top: 160px;
+            }
+          }
+          .product-content-03{
+            height: 700px;
+            .product-text-03{
+              left: 25%;
+              top: 160px;
+            }
+            .product-img-03{
+              right: 100px;
+              top: 160px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//1200px
+@media screen and (max-width: $screen-lg-min){
+  #wrap{
+    .container{
+      .section-product{
+        .section-product-content{
+          .product-content-01{
+            height: 500px;
+            .product-text-01{
+              left: 20%;
+              top: 140px;
+            }
+            .product-img-01{
+              top: 140px;
+            }
+          }
+          .product-content-02{
+            position: relative;
+            width: 100%;
+            height: 500px;
+            .product-text-02{
+              left: 60%;
+              top: 140px;
+            }
+            .product-img-02{
+              top: 140px;
+            }
+          }
+          .product-content-03{
+            height: 600px;
+            .product-text-03{
+              left: 15%;
+              top: 140px;
+            }
+            .product-img-03{
+              top: 140px;
+            }
+          }
+        }
+      }
+      .section-activity{
+        padding: 120px 0px 80px 0px;
+        .btn-setting-position{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 40px 0 0 0;
+          .btn-logbefore-google{
+            width: 200px;
+            margin: 40px 20px 0 0;
+          }
+          .btn-logbefore-apple{
+            width: 200px;
+            margin: 40px 0px 0 0;
+            .btn-logbefore-apple{
+              width: 200px;
+              margin: 40px 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//995px
+@media screen and (max-width: $screen-md-min){
+  #wrap{
+    .container{
+      .section-product{
+        .section-product-content{
+          font-size: 24px;
+          .product-content-01{
+            height: 450px;
+            .product-text-01{
+              font-size: 28px;
+              top: 160px;
+              left: 15%;
+            }
+            .product-img-01{
+              top: 160px;
+              right: 50px;
+            }
+          }
+          .product-content-02{
+            height: 450px;
+            .product-text-02{
+              font-size: 28px;
+              top: 140px;
+              left: 50%;
+            }
+            .product-img-02{
+              top: 140px;
+              left: 50px;
+            }
+          }
+          .product-content-03{
+            height: 500px;
+            .product-text-03{
+              font-size: 28px;
+              top: 140px;
+              left: 15%;
+              width: 280px;
+            }
+            .product-img-03{
+              top: 140px;
+              right: 50px;
+            }
+          }
+        }
+      }
+      .section-activity{
+        padding: 120px 0px 80px 0px;
+        height: 480px;
+        .activity-info-section{
+          font-size: 18px;
+          line-height: 24px;
+          .activity-content{    
+            .activity-content-title{
+              width: 100px;
+            }
+            .activity-content-text{
+             font-size: 18px;
+            }
+          }
+        }
+        .btn-setting-position{
+          width: 100%;
+          text-align: center;
+          .btn-logbefore-google{
+            width: 200px;
+            font-size: 24px;
+          }
+          .btn-logbefore-apple{
+            width: 200px;
+            font-size: 24px;
+            }
+          }
+        .foot-info-text{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+//780px
+@media screen and (max-width: $screen-sm-min){
+  #wrap{
+    .container{
+      .section-intro-header{
+        padding: 60px 0px;
+        .title{
+          padding: 60px 0 0 0;
+          font-size: 48px;
+        }
+        .intro-img{
+          width: 42px;
+          padding: 42px 0;
+        }
+        .intro-content{
+          margin: 0 0 72px 0;
+          font-size: 18px;
+          line-height: 32px;
+        }
+        .btn-scroll-to-bottom{
+          font-size: 28px;
+          line-height: 56px;
+        }
+      }
+      .section-product{
+        .section-product-content{
+          font-size: 24px;
+          line-height: 42px;
+          .product-content-01{
+            height: 500px;
+            .product-text-01{
+              position: absolute;
+              top: 120px;
+              left: 20%;
+              text-align: left;
+              font-size: 24px;
+              line-height: 42px;
+            }
+            .product-img-01{
+              top: 160px;
+              left: 100px;
+              width: 100%;
+            }
+          }
+          .product-content-02{
+            height: 500px;
+            .product-text-02{
+              position: absolute;
+              top: 150px;
+              left: 45%;
+              text-align: left;
+              font-size: 24px;
+              line-height: 42px;
+            }
+            .product-img-02{
+              top: 200px;
+              left: -100px;
+              width: 100%;
+            }
+          }
+          .product-content-03{
+            height: 700px;
+            .product-text-03{
+              top: 200px;
+              left: 10%;
+              width: 280px;
+              font-size: 24px;
+              line-height: 42px;
+            }
+            .product-img-03{
+              top: 220px;
+              left: 100px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .section-activity{
+        height: 650px;
+        .activity-info-section{
+          font-size: 18px;
+          line-height: 24px;
+          .activity-content{    
+            margin: 0 0 12px 0;
+          }
+          .foot-info-text{
+            font-size: 16px;
+          }
+        }
+      .btn-setting-position{
+        margin: 40px 0px 0px 0px;
+        width: 80%;
+        .btn-logbefore-google{
+          width: 320px;
+          margin: 16px 0 0 0; 
+        }
+        .btn-logbefore-apple{
+          width: 320px;
+          margin: 16px 0 0 0; 
+        }
+      }
+      .foot-info-text{
+        font-size: 12px;
+      }
+    }
+    }
+  }
+}
+
+//480px
+@media screen and (max-width: $screen-xs-min){
+  #wrap{
+    .container{
+      .section-intro-header{
+        padding: 60px 10px;
+        .title{
+          padding: 60px 0 0 0;
+          font-size: 42px;
+        }
+        .intro-img{
+          width: 42px;
+          padding: 42px 0;
+        }
+        .intro-content{
+          margin: 0 0 72px 0;
+          font-size: 18px;
+          line-height: 32px;
+        }
+        .btn-scroll-to-bottom{
+          font-size: 28px;
+          line-height: 56px;
+        }
+        .intro-content-footer{
+          padding: 10px 0 0 0;
+          font-size: 14px;
+          line-height: 24px;
+          img{
+            margin: 0px 0px 0px 0px;
+          }
+        }
+      }
+      .section-product{
+        .section-product-content{
+          font-size: 24px;
+          .product-content-01{
+            height: 400px;
+            .product-text-01{
+              top: 100px;
+              left: 20%;
+              font-size: 18px;
+              width: 280px;
+              line-height: 36px;
+            }
+            .product-img-01{
+              top: 160px;
+              left: 0px;
+            }
+          }
+          .product-content-02{
+            height: 400px;
+            .product-text-02{
+              top: 75px;
+              left: 36%;
+              font-size: 18px;
+              width: 280px;
+              line-height: 36px;
+            }
+            .product-img-02{
+              top: 150px;
+              left: 0px;
+            }
+          }
+          .product-content-03{
+            height: 500px;
+            .product-text-03{
+              top: 60px;
+              left: 15%;
+              font-size: 18px;
+              line-height: 36px;
+            }
+            .product-img-03{
+              top: 150px;
+              left: 0px;
+            }
+          }
+        }
+      }
+      .section-activity{
+        padding: 60px 0px 200px 0px;
+        .activity-title{
+          font-size: 36px;
+        }
+        .btn-setting-position{
+          margin: 0px;
+          .btn-logbefore-google{
+            width: 280px;
+            margin: 20px 0 0 0;
+          }
+          .btn-logbefore-apple{
+            width: 280px;
+            margin: 20px 0 0 0;
+            }
+          }
+      }
+    }
+    .footer{
+      padding: 12px 0 0 0;
+      height: 80px;
+      text-align: center;
+      line-height: 32px;
+      font-size: 18px;
+    }
+  }
+}
